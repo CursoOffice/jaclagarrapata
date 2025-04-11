@@ -19,7 +19,7 @@
 
   <!-- Fondo de video -->
   <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
-    <source src="imagen/fondojac.mp4" type="video/mp4" />
+    <source src="imagen/fondojac (1).mp4" type="video/mp4" />
     Tu navegador no soporta video HTML5.
   </video>
 
