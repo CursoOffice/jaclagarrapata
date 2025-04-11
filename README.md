@@ -36,6 +36,7 @@
   </style>
 </head>
 <body>
+  <img class="mb-4 center" src="imagen/logojac.png" alt="">
   <div class="welcome-card">
     <h2 class="mb-3">¡Bienvenido a la Junta de Acción Comunal!</h2>
     <p class="mb-4">Gracias por visitar el portal de la Vereda La Garrapata, Caucasia - Antioquia.</p>
