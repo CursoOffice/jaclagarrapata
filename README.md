@@ -28,7 +28,7 @@
 
   <!-- Contenido sobre el video -->
   <div class="relative z-20 flex flex-col items-center justify-center h-screen text-center px-6">
-    <img src="imagen/_Logojac-removebg-preview (1).png" alt="Logo JAC" class="w-24 h-24 mb-4 fade-in-up" style="animation-delay: 0.2s" />
+    <img src="imagen/Logojac.png" alt="Logo JAC" class="w-24 h-24 mb-4 fade-in-up" style="animation-delay: 0.2s" />
     <h1 class="text-3xl md:text-4xl font-bold fade-in-up" style="animation-delay: 0.4s">
       Bienvenidos a la Junta de Acción Comunal Vereda la Garrapata
     </h1>
