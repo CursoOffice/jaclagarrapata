@@ -26,7 +26,7 @@
 
   <!-- Fondo de video -->
   <video autoplay muted loop playsinline class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1">
-    <source src="imagen/fondojac (1).mp4" type="video/mp4" />
+    <source src="imagen/fondojac.mp4" type="video/mp4" />
     Tu navegador no soporta video HTML5.
   </video>
 
