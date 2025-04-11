@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bienvenida JAC Vereda la Garrapata</title>
+  <title>Vereda la Garrapata</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -38,7 +38,7 @@
 <body>
   <img class="mb-4 center" src="imagen/logojac.png" alt="">
   <div class="welcome-card">
-    <h2 class="mb-3">¡Bienvenido a la Junta de Acción Comunal!</h2>
+    <h2 class="mb-3">¡Bienvenido a la Junta de Acción Comunal Vereda La Garrapata! </h2>
     <p class="mb-4">Gracias por visitar el portal de la Vereda La Garrapata, Caucasia - Antioquia.</p>
     <a href="home.html" class="btn btn-success w-100 mb-2">Entrar al sitio</a>
     <a href="certificado.html" class="btn btn-outline-success w-100">Ver Certificados</a>
@@ -46,4 +46,3 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
