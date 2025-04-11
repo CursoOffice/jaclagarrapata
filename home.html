@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Junta de Acción Comunal - Barrio Las Palmas, San Cristóbal - Bogotá D.C.</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    .galeria-img:hover {
+      transform: scale(1.05);
+      z-index: 10;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans scroll-smooth">
+
+  <!-- Header -->
+  <header class="bg-green-700 text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h5 class="text-xl md:text-2xl font-bold font-serif">Junta de Acción Comunal Vereda la Garrapata</h5>
+      <nav class="hidden md:flex space-x-4 text-sm md:text-base">
+        <a href="#" class="hover:underline transition">Inicio</a>
+        <a href="#servicios" class="hover:underline transition">Servicios</a>
+        <a href="#eventos" class="hover:underline transition">Eventos</a>
+        <a href="#noticias" class="hover:underline transition">Noticias</a>
+        <a href="#proyectos" class="hover:underline transition">Proyectos</a>
+        <a href="#galeria" class="hover:underline transition">Galería</a>
+        <a href="#documentos" class="hover:underline transition">Documentos</a>
+        <a href="#contacto" class="hover:underline transition">Contáctanos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white py-12 text-center" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-green-700 font-serif">¡Bienvenido a tu comunidad!</h2>
+      <p class="text-lg md:text-xl mb-6">Trabajamos por el bienestar y el desarrollo de nuestro barrio.</p>
+      <a href="#participa" class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition">Únete y participa</a>
+    </div>
+  </section>
+
+  <!-- Historia, Misión y Visión -->
+  <section class="py-12 bg-gray-50" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6 text-green-700 text-center">Nuestra Historia</h3>
+      <p class="mb-4 text-justify">La Junta de Acción Comunal de la verda la Garrapata fue fundada con el propósito de promover la organización comunitaria, impulsar el desarrollo local y generar espacios de participación ciudadana activa. A lo largo de los años, hemos trabajado de la mano con los vecinos para fortalecer la convivencia y mejorar la calidad de vida en nuestro sector.</p>
+      <h3 class="text-2xl font-bold mb-4 text-green-700 text-center">Misión</h3>
+      <p class="mb-4 text-justify">Fomentar la participación ciudadana, coordinar esfuerzos colectivos y ejecutar proyectos comunitarios que contribuyan al bienestar social, económico y ambiental del barrio Las Palmas.</p>
+      <h3 class="text-2xl font-bold mb-4 text-green-700 text-center">Visión</h3>
+      <p class="text-justify">Ser una organización comunitaria modelo en Bogotá, reconocida por su liderazgo, transparencia y compromiso con el desarrollo sostenible y la inclusión social de todos los habitantes del barrio Las Palmas.</p>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-12" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6 text-green-700 text-center">Nuestros Servicios</h3>
+      <ul class="grid md:grid-cols-3 gap-6">
+        <li class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-all border border-gray-200">Asesoría comunitaria</li>
+        <li class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-all border border-gray-200">Actividades recreativas</li>
+        <li class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-all border border-gray-200">Gestión de proyectos barriales</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Eventos -->
+  <section id="eventos" class="py-12 bg-gray-50" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-2xl font-bold mb-6 text-green-700">Próximos Eventos</h3>
+      <p class="mb-4">No te pierdas nuestros encuentros comunitarios, jornadas de limpieza y más.</p>
+    </div>
+  </section>
+
+  <!-- Noticias -->
+  <section id="noticias" class="py-12" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6 text-green-700 text-center">Noticias Recientes</h3>
+      <article class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-all border border-gray-200 mb-4">
+        <h4 class="text-xl font-semibold">Nueva iluminación en el parque principal</h4>
+        <p class="text-sm">Publicado el 3 de abril de 2025</p>
+        <p>Gracias a la gestión de la comunidad, se instalaron nuevas lámparas LED.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Proyectos en Ejecución -->
+  <section id="proyectos" class="py-12 bg-gray-50" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6 text-green-700 text-center">Proyectos en Ejecución</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-all border border-gray-200">
+          <h4 class="text-lg font-semibold mb-2">Mejoramiento del Salón Comunal</h4>
+          <canvas id="grafico1"></canvas>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-all border border-gray-200">
+          <h4 class="text-lg font-semibold mb-2">Huerta Comunitaria</h4>
+          <canvas id="grafico2"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="py-12" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-2xl font-bold mb-6 text-green-700">Galería Fotográfica</h3>
+      <p class="mb-6">Fotos de eventos, proyectos y participación ciudadana.</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="imagen/1.png" alt="Evento 1" class="rounded shadow galeria-img cursor-pointer" onclick="ampliarImagen(this.src)" />
+        <img src="imagen/2.png" alt="Evento 2" class="rounded shadow galeria-img cursor-pointer" onclick="ampliarImagen(this.src)" />
+        <img src="imagen/5.png" alt="Evento 3" class="rounded shadow galeria-img cursor-pointer" onclick="ampliarImagen(this.src)" />
+        <img src="imagen/Agenda Page.png" alt="Evento 4" class="rounded shadow galeria-img cursor-pointer" onclick="ampliarImagen(this.src)" />
+      </div>
+    </div>
+    <dialog id="modalImagen" class="rounded-xl p-0 border max-w-4xl w-full">
+      <img id="imgModal" src="" alt="Imagen Ampliada" class="w-full h-auto rounded" />
+      <form method="dialog">
+        <button class="bg-green-700 text-white px-4 py-2 w-full hover:bg-green-800">Cerrar</button>
+      </form>
+    </dialog>
+  </section>
+
+  <!-- Aliados -->
+  <section id="aliados" class="py-12 bg-gray-50" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-2xl font-bold mb-6 text-green-700">Aliados Estratégicos</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.HEJpIIwdkXC17LXyeBjMGgHaHa?rs=1&pid=ImgDetMain" alt="Mineros" class="mx-auto h-20 object-contain">
+        <img src="https://media-exp1.licdn.com/dms/image/C560BAQFzT5niLY807w/company-logo_200_200/0/1609770134606?e=2159024400&v=beta&t=jV_pRO-mwohIHKbHGAIH-_emXRYbUWMCcoo1Ru0aH4U" alt="Fundación A" class="mx-auto h-20 object-contain">
+        <img src="https://static.wixstatic.com/media/6f8a71_a4b92583be074edf8d0d52badbfafe94~mv2.png" alt="ONG B" class="mx-auto h-20 object-contain">
+        <img src="/imagen/Vivero.png" alt="JAC Vecina" class="mx-auto h-20 object-contain">
+      </div>
+    </div>
+  </section>
+
+  <!-- Notas Periodísticas -->
+  <section id="notas" class="py-12 bg-white" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6 text-green-700 text-center">Notas Periodísticas</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="bg-gray-100 p-6 rounded shadow hover:shadow-lg transition-shadow duration-300">
+          <h4 class="text-xl font-semibold mb-2">Retos del agua en la vereda</h4>
+          <p class="text-sm text-gray-500 mb-2">Por Carolina Martínez · 8 de abril de 2025</p>
+          <p class="text-justify">La comunidad enfrenta desafíos en el acceso al agua potable. Conoce cómo se han organizado para exigir soluciones al Distrito...</p>
+        </article>
+        <article class="bg-gray-100 p-6 rounded shadow hover:shadow-lg transition-shadow duration-300">
+          <h4 class="text-xl font-semibold mb-2">El renacer del cultivo comunitario</h4>
+          <p class="text-sm text-gray-500 mb-2">Por Juan David López · 5 de abril de 2025</p>
+          <p class="text-justify">Con el proyecto de la huerta, varias familias han recuperado prácticas agrícolas ancestrales y reforzado la seguridad alimentaria local...</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cobertura de Hechos -->
+  <section id="cobertura" class="py-12 bg-gray-50" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-2xl font-bold mb-6 text-green-700">Cobertura de Hechos en la Vereda</h3>
+      <p class="mb-6">Aquí encontrarás imágenes y videos de momentos importantes en nuestra comunidad.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded shadow">
+          <video controls class="w-full rounded">
+            <source src="videos/limpieza_rio.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+          </video>
+          <p class="mt-2 text-sm">Jornada de limpieza del río · Marzo 2025</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <img src="imagen/reunion_comunidad.jpg" alt="Reunión" class="rounded mb-2" />
+          <p class="text-sm">Reunión con autoridades locales · Abril 2025</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <img src="imagen/afectacion_lluvias.jpg" alt="Emergencia" class="rounded mb-2" />
+          <p class="text-sm">Emergencia por lluvias torrenciales · Marzo 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documentos -->
+  <section id="documentos" class="py-12 bg-gray-50" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-2xl font-bold mb-6 text-green-700">Actas y Documentos</h3>
+      <p class="mb-4">Descarga actas de reuniones, informes y documentos oficiales de la Junta.</p>
+      <div class="space-y-4">
+        <button onclick="descargarConClave('documentos/acta_asamblea_abril.pdf')" class="bg-white hover:bg-green-100 border border-green-600 text-green-700 px-4 py-2 rounded-full transition">
+          📄 Acta Asamblea Abril 2025
+        </button>
+        <button onclick="descargarConClave('documentos/informe_gestion_2024.pdf')" class="bg-white hover:bg-green-100 border border-green-600 text-green-700 px-4 py-2 rounded-full transition">
+          📄 Informe de Gestión 2024
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-12" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-2xl font-bold mb-6 text-green-700">Contáctanos</h3>
+      <p class="mb-4">¿Tienes dudas o sugerencias? ¡Queremos escucharte!</p>
+      <form class="grid gap-4 max-w-md mx-auto">
+        <input type="text" placeholder="Tu nombre" class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600" />
+        <input type="email" placeholder="Tu correo" class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600" />
+        <textarea placeholder="Mensaje" class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
+        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- WhatsApp Button (Direct Engagement) -->
+  <a href="https://wa.me/3127947484" target="_blank" class="fixed bottom-6 right-6 bg-green-600 text-white p-4 rounded-full shadow-lg z-50 hover:bg-green-700 transition">
+    <!-- SVG WhatsApp Icon -->
+    <svg xmlns="https://toppng.com/public/uploads/preview/whatsapp-svg-png-icon-free-download-whatsapp-logo-vector-black-11562868892nb2zdc2lyp.png" class="h-8 w-8" viewBox="0 0 448 512" fill="currentColor">
+      <path d="M380.9 97.1C339-10.5 241.8-34.6 158.3 6.1 123.9 26.4 95.5 56.9 76.1 94.6 26.8 174.7 48 275.6 124 328.8l-24.5 75 77-24.3c46.3 24.7 98 37.2 150.4 37.2h1.1c117.5-.1 214.3-95.6 214.3-213.4 0-57.6-22.5-112.5-62.7-153.2zm-50.4 225.5c-7.1 20-34.6 38.8-49.2 41.9-13.7 3-30.6 4.2-78 4.2-56.4 0-88.3-12.8-108.7-25.2-29.7-18.4-48.8-45.2-56.3-70-8.4-27.8-.5-59.2 20.8-78.6 21.5-19.9 49.2-18.8 69.3-13.3 21.9 6.3 42.7 16.6 63.9 34.3 19.4 16.1 35.5 33.7 49 58 13.7 24.9 10.4 48.5 2.8 68.2zM224 8C100.3 8 0 108.3 0 232c0 41 11.3 80 32.7 115L0 504l160.8-42.3c31 17 66.5 26 103.2 26 123.7 0 224-100.3 224-224S347.7 8 224 8z"/>
+    </svg>
+  </a>
+
+  <!-- Facebook SDK for Social Media Feed (if needed in other parts) -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" 
+    src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0" 
+    nonce="abc123">
+  </script>
+
+  <!-- Scripts -->
+  <script>
+    function descargarConClave(archivo) {
+      const clave = prompt("Ingresa la contraseña para descargar este documento:");
+      if (clave === "comunidad2025") {
+        window.location.href = archivo;
+      } else if (clave !== null) {
+        alert("Contraseña incorrecta. Intenta nuevamente.");
+      }
+    }
+
+    const crearGrafico = (idCanvas, avance) => {
+      new Chart(document.getElementById(idCanvas), {
+        type: 'doughnut',
+        data: {
+          labels: ['Avance', 'Faltante'],
+          datasets: [{
+            data: [avance, 100 - avance],
+            backgroundColor: ['#16a34a', '#d1d5db']
+          }]
+        },
+        options: {
+          cutout: '70%',
+          plugins: {
+            legend: { display: false },
+            tooltip: { enabled: true }
+          }
+        }
+      });
+    };
+
+    function ampliarImagen(src) {
+      const modal = document.getElementById('modalImagen');
+      document.getElementById('imgModal').src = src;
+      modal.showModal();
+    }
+
+    window.onload = () => {
+      crearGrafico('grafico1', 75);
+      crearGrafico('grafico2', 50);
+    };
+  </script>
+  
+  <!-- AOS Animation Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center py-4">
+    <p class="text-sm">&copy; 2025 Junta de Acción Comunal - Barrio Las Palmas, San Cristóbal. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
